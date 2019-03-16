@@ -39,7 +39,7 @@ Fast Startup Sequence from Jabbers.
    2. Set the left throttle detent to "Idle" - Left Click the right throttle
    3. As the left engine starts, Jester will begin to flick switches, use this as the cue to proceed
 
-10. Turn on the SAS - flick the following 3 switches into the upright position:
+10. Turn on the Stability Augmentation System (SAS) - flick the following 3 switches into the upright position:
 
     ![1552668791416](assets/1552668791416.png)
 
@@ -108,6 +108,60 @@ Fast Startup Sequence from Jabbers.
 8. Once a positive vertical rate is achieved, bring up the landing gear `g` and flaps.
 
 
+
+### Tactical Air Navigation (TACAN)
+
+Credits to the [Grim Reapers](<https://www.youtube.com/watch?v=_SHlzJrpP2U> ).
+
+#### Introduction
+
+Tactical Air Navigation, also known as TACAN, allows the aircraft to navigate to anywhere that has a TACAN station (such as at an airbase, carrier or refueling tanker). The F-14's TACAN unit is the ARN-84. It works in the 5mHz radio band and has a maximum range of 300 nm if line of sight permits it (terrain and curvature of the Earth will affect the TACAN range).
+
+Unlike a radio station, TACANs station work by channel numbers. These numbers are either given in mission briefs or visible in the mission editor:
+
+![1552748828967](assets/1552748828967.png)
+
+The triangle symbol is the universal symbology for a TACAN station. The TACAN channel for that station can be found under "Chan". TACAN stations can end with an "X" or "Y" suffix. If a suffix is not present, an "X" is assumed. The identification code (or rather, callsign of the station) in this case is "MA" or "Mike Alpha". This will be used to confirm that the correct TACAN station has been selected during a flight.
+
+When creating a mission, it is important to note that aircraft carriers do not have their TACAN transmitters turned on by default. The TACAN transmitter can be turned on in mission editor under the "ADVANCED (WAYPOINT ACTIONS)" menu. The Type will be "Perform Command" and the Action will be "Activate TACAN":
+
+![1552749028112](assets/1552749028112.png)
+
+#### TACAN Panel
+
+The TACAN panel is located on the left side console for the both the Pilot and RIO. Ensure that the TACAN CMD switch is set to the correct setting (PLT for pilot and NFO for RIO), this is because only one crewmember is allowed to be in control of the aircraft TACAN at any point of time:
+
+![1552749526214](assets/1552749526214.png)
+
+The TACAN control panel allows the user to dial in the correct TACAN channel (using the channel selector), the channel type (X or Y) using the appropriate switch and then select a mode using the mode knob. 
+
+To select the channel, turn the top dial (with the arm) to change the bottommost number and the dial on the side to change the two numbers on top (mentioning this because it proved counterintuitive the first time round). In the above case from the introduction, the user would dial (096) for the channel 96.
+
+![1552749773298](assets/1552749773298.png)
+
+As of writing, the mode switch does not support INVERSE mode. It also recommended that the TACAN audio be set high.
+
+The ARN-84 supports the following modes (selectable by the Mode Knob):
+
+- OFF - Turns off TACAN
+- REC - Receive Only: Passive TACAN mode that returns azimuth reading to the TACAN station only
+- T/R - Transmit and Receive: Active TACAN mode that returns both azimuth and range (also known as SLANT) to the TACAN station
+- A/A - Air to air TACAN mode: T/R mode but for air to air refueling, returns both azimuth and range to the refueling tanker
+- BCN - Beacon TACAN mode (not functional at time of writing)
+
+#### TACAN and Cockpit Symbology
+
+Upon connecting to a TACAN station, various displays within the cockpit will update with azimuth (and if applicable, range) information to the TACAN station accordingly. The first of which is the Bearing Distance Heading Indicator (BDHI):
+
+![1552750407807](assets/1552750407807.png)
+
+The TACAN needle (larger needle) will provide the azimuth and the range display will update accordingly. The range display reads in the clockwise direction - in this case, the range is "012" or 12 miles away. *Do not confuse the TACAN needle with the smaller UHF/ADF needle*
+
+The Horizontal Situation Display Indicator (HSD) should also update with the TACAN azimuth:
+
+![1552750665827](assets/1552750665827.png)
+
+If the volume knob was set high enough, the TACAN station's identification code (callsign) will be sounded to the aircraft in morse code. In the case of the introduction, the identification code would be "MA" or "Mike Alpha" which converts to "-- .-" in morse. Upon hearing this series of beeps, the crew can confirm if the correct TACAN station has been connected to. After verification, the volume knob can be turned back down if desired.
 
 ### Aircraft Maneuvering and Flight Characteristics
 
