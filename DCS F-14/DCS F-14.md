@@ -1,10 +1,19 @@
 ## DCS F-14
 
+Just a basic compilation of information for the DCS F-14B. Primarily made for the pilot, but I may look into the RIO position in the future.
+
 ### Essential Reading
 
 [F-14 NATOPS Manual](<https://info.publicintelligence.net/F14AAD-1.pdf> )
 
 [Heatblur DCS F-14 Tomcat Manual](<http://www.heatblur.se/F-14Manual/> )
+
+##### Urgent To-Dos
+
+- Ground Landing Guide
+- Air to Air Weapons Employment
+- Case I Carrier Takeoff
+- Case I Carrier Recovery
 
 ### Basic Aircraft Operation
 
