@@ -36,7 +36,9 @@ Any other cockpit switch/instrument that is not on this list is non-essential or
 
 ##### Multi-Purpose Color Display
 
+### RADAR
 
+For the purposes of understanding RADAR operation on the F-15 (or even in general), the TAWDCS F-15 RADAR tool is incredibly awesome. It can be found on the [TAWDCS Page](https://tawdcs.org/radar-f15/). 
 
 ### Operating Procedure
 
