@@ -116,7 +116,26 @@ Fast Startup Sequence from Jabbers.
 7. At 135 knots, slowly pull back on the stick
 8. Once a positive vertical rate is achieved, bring up the landing gear `g` and flaps.
 
+### Cockpit Layout
 
+##### Pilot Layout
+
+Take note of the pilot cockpit layout so as to understand the references made within this guide. It also helps when trying to instruct of advise other players or crews in various situations.
+
+![1552803233553](/home/fasermaler/github/DCS-Guides-and-Notes/DCS F-14/assets/1552803233553.png)
+
+1. Left Side Console
+2. Left Vertical Console
+3. Left Knee Panel
+4. Left Instrument Panel
+5. Left Windshield Frame
+6. Center Panel
+7. Right Windshield Frame
+8. Right Instrument Panel
+9. Right Knee Panel
+10. Right Vertical Console
+11. Right Side Console
+12. Canopy Control Handle
 
 ### Tactical Air Navigation (TACAN)
 
