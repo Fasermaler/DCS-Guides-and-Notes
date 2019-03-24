@@ -6,6 +6,8 @@ Just a basic compilation of information for the DCS F-14B. Primarily made for th
 
 [F-14 NATOPS Manual](<https://info.publicintelligence.net/F14AAD-1.pdf> )
 
+[F-14 Pocket Checklist](https://info.publicintelligence.net/F14AAD-1.pdf)
+
 [Heatblur DCS F-14 Tomcat Manual](<http://www.heatblur.se/F-14Manual/> )
 
 ##### Urgent To-Dos
@@ -412,28 +414,27 @@ The following is the postlanding checklist from NATOPS F14AAD-1, Section 7.4.18.
    - TACAN
    - ARA-63
    - Do not turn off the UHF/VHF radio
-8. Verify and record all codes on the DCP (FAIL, FLT, IBIT)
-9. Set the right throttle to 'OFF'
+8. Set the right throttle to 'OFF'
    - Run both engines for 5 minutes at 'IDLE' before shutdown
    - Take care not to set the left throttle to 'OFF' by accident
-10. Set the OBOGS master switch to 'OFF' (alert the RIO)
-11. Turn the OXYGEN SUPPLY valve to 'OFF'
-12. Do a bi-directional hydraulic transfer check
+9. Set the On Board Oxygen Generator (OBOG) master switch to 'OFF' (alert the RIO)
+10. Turn the OXYGEN SUPPLY valve to 'OFF'
+11. Do a bi-directional hydraulic transfer check
     - Set the HYD TRANSFER PUMP switch to 'NORMAL'
     - Check the hydraulic pressure readings are equalized even with the right engine turned off
     - Set the HYD TRANSFER PUMP switch to 'SHUTOFF'
-13. Set ejection seat to 'SAFE'
-14. Disarm Ordnance (not applicable to DCS)
-15. Wheels should be chocked (not applicable to DCS)
-16. Pull the parking brake
+12. Set ejection seat to 'SAFE'
+13. Disarm Ordnance (not applicable to DCS)
+14. Wheels should be chocked (not applicable to DCS)
+15. Pull the parking brake
     - Do not pull the parking brake subsequent to a field landing if the brakes have been used extensively
-17. Set the UHF / VHF RADIO MODE switch to 'OFF'
-18. Cage the standby attitude gyro
-19. Set the Left throttle to 'OFF' (alert the RIO)
-20. Set EMERG generator switch to 'OFF' (this switch is located on the Master Generator Control Panel)
-21. Verify that the EJECT CMD indicator is off (it will look like red an white stripes)
-22. The canopy can now be open
-23. Aircraft has completed postlanding 
+16. Set the UHF / VHF RADIO MODE switch to 'OFF'
+17. Cage the standby attitude gyro
+18. Set the Left throttle to 'OFF' (alert the RIO)
+19. Set EMERG generator switch to 'OFF' (this switch is located on the Master Generator Control Panel)
+20. Verify that the EJECT CMD indicator is off (it will look like red an white stripes)
+21. The canopy can now be open
+22. Aircraft has completed postlanding 
 
 ### Cockpit Layout
 
