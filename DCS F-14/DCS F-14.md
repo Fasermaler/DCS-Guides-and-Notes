@@ -14,6 +14,7 @@ Just a basic compilation of information for the DCS F-14B. Primarily made for th
 - Air to Air Weapons Employment
 - Case I Carrier Takeoff
 - Case I Carrier Recovery
+- Bingo Fuel Calculation
 
 ### Basic Aircraft Operation
 
@@ -116,13 +117,238 @@ Fast Startup Sequence from Jabbers.
 7. At 135 knots, slowly pull back on the stick
 8. Once a positive vertical rate is achieved, bring up the landing gear `g` and flaps.
 
+
+
+### Cold Start
+
+1. Turn on Oxygen (switch on left of seat)
+
+   ![1553353278974](assets/1553353278974.png)
+
+2. Connect Ground Power `\` `F8` `F2` `F1`
+
+3. Connect Ground Air Supply `\` `F8` `F5` `F1`
+
+4. Tell Jester to startup: Bring up Jester Menu and select "Startup" (3)
+
+5. Jester will initiate a Comms check: Bring up the Jester Menu and select "Loud and Clear" (4) 
+
+6. Jester will inform the pilot to check that the landing gear is extended and that the transition light is off
+
+   - Check that the landing gear handle is down:
+
+   ![1553353141129](assets/1553353141129.png)
+
+   - Transition light is position 4 in the image. It indicates if the landing gear is in transition to the state set by the landing gear. It should be off to confirm that the landing gear is fully deployed and functioning.
+
+7. Jester will then ask the pilot to select 'LTS' on the master test switch (located on the right console). LTS mode is to test the cockpit indication lights - verify that all lights illuminate.
+
+   ![1553353389734](assets/1553353389734.png)
+
+   `RMB` to pull out or push in the Master Test switch
+
+   `LMB` to turn the Master Test switch.
+
+   Check around the cockpit and ensure that all lights are functional.
+
+8. The next test is the Fire Detection System test. Switch the Master Test switch to 'FIRE DET/EXT' - it should be the next switch position after 'LTS'. 
+
+   - Check that the green 'GO' light on the Test Panel is illuminated. If the test is bad, the red 'NO GO' light will be illuminated instead.
+   - Check that the left and right Fire Lights on the center panel are illuminated.
+
+   ![1553353694068](assets/1553353694068.png)
+
+9. The next test is the Instruments test, set the Master Test switch to 'INST' - once again this should be the next test in line after the 'FIRE DET/EXT' test. Once the switch is pushed in, take note if the following changes are observed on the corresponding cockpit instrumentation:
+
+   - Fuel Panel should display a fuel quantity of 2000 lbs
+   - Wing Sweep Indicator should display 45 degrees of sweep
+   - AoA Indicator will display 17 units of AoA
+   - Engine Panel 'OFF' display will disappear and all engine RPM bars will be filled with some amount of RPM
+
+10. Disengage the Master Test switch by pulling it out
+
+11. Arm the ejection seat above using the lever above the Pilot's seat
+
+12. Jester will now close the canopy (or the pilot can opt to do it using `LCtrl` + `c` )
+
+13. On the ACM panel (front, right below the HUD), check the following:
+
+    - **GUN RATE:** LOW
+    - **SW COOL:** OFF
+    - **MSL PREP:** OFF
+    - **MSL MODE**: NORM
+
+14. Check that the Emergency Stores Jettison button light is not illuminated (position 6 in the image below).
+
+    ![1553353141129](assets/1553353141129.png)
+
+15. Under the AIR CONDITION panel, check that the AIR SOURCE is set to OFF (incorrect in this picture):
+
+    ![1553354630136](assets/1553354630136.png)
+
+16. Further below the AIR CONDITION panel is the Hydraulic Transfer Pump panel. Lift the cap and set the switch to 'SHUTOFF'.
+
+    ![1553354775001](assets/1553354775001.png)
+
+17. Return to the MASTER TEST Panel, on the right is the Emergency Flight Hydraulic switch. Uncap and switch to 'LOW'
+
+    - Check that Hydraulic Pressure Indicator (to the left of the engine RPM indicator) has the LOW indicator display an 'ON' flag
+
+      ![1553355071802](assets/1553355071802.png)
+
+    - Do the same for the 'HIGH' setting
+
+    - Finally, switch the EMERG FLT HYD switch to 'AUTO' and cap the switch to complete the test
+
+18. Start the Right Engine:
+
+    1. Set the crank switch to the right position and wait for RPM to reach 20%
+
+    2. Bring the right throttle to 'IDLE' to introduce fuel into the engine
+
+    3. Wait for the engine RPM to reach 50% and the engine crank switch to return to center automatically
+
+    4. On the Advisory Indicator, check that the 'R GEN' and 'R FUEL PRESS' caution lights are off
+
+       ![1553355624511](assets/1553355624511.png)
+
+    5. Check that the engine parameters are within normal parameters:
+
+       - **RPM:** 62-78%
+       - **TIT:** approx 500
+       - **Fuel flow:** 915-1400
+
+19. Disconnect the Ground Power:  `\` `F8` `F2` `F2`
+
+    - Take note that the Ground Chief's reply will not be audible as the canopy has been shut
+
+20. Check that the hydraulic transfer pump works and that there is bi-directional flow between flight hydraulics and the combined hydraulics
+
+    1. Switch Engine Crank Switch to left
+    2. Check the Hydraulic Pressure Indicator for the combined hydraulic pressure and wait for it to reach around 3000
+    3. Switch Engine Crank Switch to the center
+    4. Wait for a while and check that the pump pressure remains constant
+    5. Switch the HYD TRANSFER PUMP switch to 'NORMAL' and (this switch is from step 16)
+    6. Check again that the combined hydraulic pressure holds at around 3000
+    7. Switch the HYD TRANSFER PUMP switch back to 'SHUTOFF'
+
+21. Repeat Step 18 for the Left Engine
+
+22. Disconnect ground air supply:  `\` `F8` `F5` `F2`. 
+
+    - Once again, the reply will not be audible
+
+23. If the pilot is not currently a Jester-assisted startup, command Jester to do an INS alignment. By default, the alignment for a Jester-assisted startup is a fine alignment. Check step 13 of the Fast Startup section of the guide on how to request an INS alignment from Jester.
+
+24. Under the AIR CONDITION panel, cycle the AIR SOURCE through 'R ENG', 'L ENG' and 'BOTH ENG'
+
+25. Switch the HYD TRANSFER PUMP switch to 'NORMAL' and close the cap
+
+26. Set the Stability Augmentation Switches to 'ON'
+
+    - Also check that the warning lights for stability augmentations are switched off in the advisory panel (top row)
+
+27. Set each engine to secondary mode and check the advisory panel for the warning (the switches for ENG MODE SELECT are above the AFCS panel from the previous check). Then set the switch back to the original position after verifying the test. Do this for each engine individually.
+
+28. At the UHF Panel (right of the AFCS Panel), set the Mode seletor knob (left) to 'GUARD' and the function selector knob (right) to MAIN/BOTH/ADF, whichever is required. Verify that the frequency/channel display is operational.
+
+    ![1553424457595](assets/1553424457595.png)
+
+29. In the TACAN control panel, set the TACAN mode knob to 'T/R'
+
+30. On the ARA-63 Control Panel (right console), set the power to 'ON'
+
+    ![1553424596702](assets/1553424596702.png)
+
+31. Turn on power to the following displays and verify that they are on:
+
+    - VDI
+    - HUD
+    - HSD
+
+    Also check the UHF and VHF remote indicators are turned on - turn the knobs to increase the brightness if necessary.
+
+    ![1553424651882](assets/1553424651882.png)
+
+32. Uncage the radar altimeter
+
+33. Check that the trims are working and then zero all trims. The trim panel is to the left of the landing gear.
+
+34. Uncage the Standby Attitude Indicator
+
+35. Check integrated trim system:
+
+    - Deploy the airbrake partially and close them, the trim should move slightly
+    - Deploy the airbrakes fully and observe that the trim changes again
+    - Retract the airbrakes when integrated trim is verified to be working
+
+36. Check the refueling probe, extend and retract to verify functionality (the switch is located below the landing gear handle)
+
+37. Push the emergency wing-sweep handle to full forward and push it in
+
+38. Press the master reset switch (in front of the wing sweep handle) and put the wings into 'AUTO' (this button is on the joystick for the F-14, so bind it accordingly)
+
+39. Turn on the external lights on the Master Light Control Panel (right of the AIR CONDITION panel)
+
+    - For detailed information on the light panel, visit the [Master Light Control Panel](<http://www.heatblur.se/F-14Manual/cockpit.html?highlight=transition%20light#master-light-control-panel>) page on the Heatblur F-14 manual
+
+40. Check the flaps and slats (the lever is to the left of the throttle)
+
+    - Move the flaps lever to 50%
+
+    - Visually check that the slats are down
+
+    - Check the flaps in the wheels-flap position indicator
+
+      ![1553426807498](assets/1553426807498.png)
+
+    - Move the flaps lever to 100% 
+
+    - Visually check that the slats are down
+
+    - Check the flaps in the wheels-flap position indicator
+
+41. Check all control surfaces with the flight stick and rudder
+
+42. Check Direct Lift Control mode
+
+    - Toggle the DLC (the control is located on the joystick)
+    - Check the spoiler positions in the trim panel
+    - Verify the spoiler positions visually
+
+43. Set the ANTI SKID SPOILER BK switch to 'SPOILER BK' this is the anti skid mode that uses the spoiler brake only.
+
+    - Visually check that the spoilers are up
+
+44. Check the spoilers and throttle
+
+    - Ensure that the parking brake is on
+    - Add a little bit of throttle
+    - Check that the spoiler brakes go all the way down - visually and on the trim panel
+    - Release the throttle and check that the spoiler brakes come back up
+    - Set the ANTI SKID SPOILER BK switch to 'OFF'
+
+45. Retract the flaps and slats
+
+46. Set the maneuvering flaps to down (using the DLC on the flight stick) - check the flaps indicator.
+
+47. Set wing-sweep to 50 degrees using manual mode
+
+48. Retract the maneuvering flaps until they are just slightly 'cracked'
+
+49. Set wing-sweep mode to 'BOMB' - verify that the maneuvering flaps fully retract
+
+50. Set the emergency wing-sweep handle to 68 degrees and check that this is complete both in the wing-sweep indicator and visually
+
+
+
 ### Cockpit Layout
 
 ##### Pilot Layout
 
 Take note of the pilot cockpit layout so as to understand the references made within this guide. It also helps when trying to instruct of advise other players or crews in various situations.
 
-![1552803233553](/home/fasermaler/github/DCS-Guides-and-Notes/DCS F-14/assets/1552803233553.png)
+![1552803233553](assets/1552803233553.png)
 
 1. Left Side Console
 2. Left Vertical Console
