@@ -121,6 +121,13 @@ Fast Startup Sequence from Jabbers.
 
 ### Cold Start
 
+This is the cold start procedure as outlined in the [Heatblur F-14 Episode 3: Cold and Dark (Full Startup)](https://www.youtube.com/watch?v=ws1GxPG2ZXw) video. The procedures for start up on the F-14 Manual differ slightly and can be accessed in the following links:
+
+- Pre-startup: [Interior Inspection](http://www.heatblur.se/F-14Manual/procedures.html#interior-inspection)
+- [Pre-Start](http://www.heatblur.se/F-14Manual/procedures.html#prestart)
+- [Engine Start](http://www.heatblur.se/F-14Manual/procedures.html#engine-start)
+- [Post Start](http://www.heatblur.se/F-14Manual/procedures.html#poststart)
+
 1. Turn on Oxygen (switch on left of seat)
 
    ![1553353278974](assets/1553353278974.png)
@@ -163,7 +170,10 @@ Fast Startup Sequence from Jabbers.
    - Fuel Panel should display a fuel quantity of 2000 lbs
    - Wing Sweep Indicator should display 45 degrees of sweep
    - AoA Indicator will display 17 units of AoA
-   - Engine Panel 'OFF' display will disappear and all engine RPM bars will be filled with some amount of RPM
+   - Engine Panel 'OFF' display will disappear 
+     - RPM: 96%
+   - Oxygen Level: 2L
+   - L and R FUEL FLOW lights illuminated
 
 10. Disengage the Master Test switch by pulling it out
 
@@ -270,7 +280,7 @@ Fast Startup Sequence from Jabbers.
 
     ![1553424651882](assets/1553424651882.png)
 
-32. Uncage the radar altimeter
+32. Uncage the radar altimeter (turn clockwise). Increasing clockwise raises the altitude warning level.
 
 33. Check that the trims are working and then zero all trims. The trim panel is to the left of the landing gear.
 
@@ -339,6 +349,43 @@ Fast Startup Sequence from Jabbers.
 49. Set wing-sweep mode to 'BOMB' - verify that the maneuvering flaps fully retract
 
 50. Set the emergency wing-sweep handle to 68 degrees and check that this is complete both in the wing-sweep indicator and visually
+
+51. Oversweep the wing-sweep handle beyond 68 degrees:
+
+    - Check that the 'HZ TAIL AUTH' (horizontal tail authorization) light goes out on the advisory panel
+    - Check the wing-sweep indicator for the 'OVER' flag
+
+52. Set wing-sweep mode to auto (on the joystick) and press the master reset button
+53. Depress the radar altimeter knob to start the Built in Test (BIT)
+    - Display should show 100 feet and the indicator green light illuminates
+    - Release the knob and the indicator should show 0 feet
+    - Warning should sound in the cockpit and the ALT LOW should illuminate
+54. Check that the displays are set as needed
+55. Run TACAN BIT
+    - Press the BIT button on the TACAN panel
+    - Both the 'GO' and 'NO GO' lights should illuminate
+56. Run ARA-63 BIT, this is the ILS test
+    - On the Display Panel:
+      - Set HUD AWL switch to 'ILS'
+      - Set the VDI AWL switch to 'ILS'
+      - Set the MODE to 'LDG' (landing)
+      - Set the STEER CMD to 'AWL/PCD'
+    - Press and hold the BIT button on the ARA-63 panel
+      - Observe that there is a sweep on both the HUD and VDI
+      - Once done, release the BIT button
+    - Reset the displays
+      - Set HUD AWL switch to 'ACL'
+      - Set VDI AWL switch to 'ACL'
+      - Set MODE to 'T.O'
+      - Set STEER CMD to 'DEST'
+57. Set altimeter reference pressure level and reset mode
+    - The altimeter reference pressure level should be provided in the mission brief or the airfield in mission editor
+    - Press and hold the Mode switch in the 'RESET' position to reset the altimeter based on the reference pressure level
+58. Compass Check
+    - Compare compass IMU heading to that on the HUD, VDI, HSD and BDHI
+    - The compass is actually behind the right Windshield frame - this means that it can be very difficult for players without track IR to actually see the compass in normal views. Under such circumstances, the compass check can be ignored for gameplay reasons (if the HUD, VDI, HSD and BDHI seem to line up)
+59. Check Flight Instruments - do a general once over through the whole cockpit to ensure everything seems in order
+60. The plane is now ready to Taxi
 
 
 
