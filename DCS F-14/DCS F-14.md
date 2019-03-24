@@ -387,7 +387,53 @@ This is the cold start procedure as outlined in the [Heatblur F-14 Episode 3: Co
 59. Check Flight Instruments - do a general once over through the whole cockpit to ensure everything seems in order
 60. The plane is now ready to Taxi
 
+#### Postlanding Procedure
 
+The following is the postlanding checklist from NATOPS F14AAD-1, Section 7.4.18. Conduct this procedure after aircraft has reached the parking spot and is ready to shutdown.
+
+1. Set the Speed brake switch to 'RET' (this is located on the throttle)
+2. Set the ANTI SKID SPOILER BK switch to 'OFF'
+3. Set the Flaps and slats to 'UP'
+   - Move the flap handle fully up and check for compete retraction of main flaps and slats as well as auxiliary flaps
+     - Flap indicator: 0%
+     - FLAP Caution Light: Off
+   - Check for automatic deactivation of outboard spoiler module.
+     - As soon as the auxiliary flaps are retracted (8 seconds), the wings will sweep aft if commanded
+4. Set wing-sweep mode to 'BOMB' (after the 8 seconds)
+5. Set the emergency wing-sweep handle to 55 degrees and verify that the wings move to the position
+6. Set the emergency wing sweep handle to over sweep (OV SW / OV SWP):
+   - Move the handle to 68 degrees and hold
+   - Wait for HZ TAIL AUTH caution light to go out and the 'OVER' flag appears on the wing sweep indicator
+   - Move the handle to full aft (75 degrees) and stow
+7. Turn off all avionics
+   - Data Link
+   - Radar Altimeter
+   - Displays
+   - TACAN
+   - ARA-63
+   - Do not turn off the UHF/VHF radio
+8. Verify and record all codes on the DCP (FAIL, FLT, IBIT)
+9. Set the right throttle to 'OFF'
+   - Run both engines for 5 minutes at 'IDLE' before shutdown
+   - Take care not to set the left throttle to 'OFF' by accident
+10. Set the OBOGS master switch to 'OFF' (alert the RIO)
+11. Turn the OXYGEN SUPPLY valve to 'OFF'
+12. Do a bi-directional hydraulic transfer check
+    - Set the HYD TRANSFER PUMP switch to 'NORMAL'
+    - Check the hydraulic pressure readings are equalized even with the right engine turned off
+    - Set the HYD TRANSFER PUMP switch to 'SHUTOFF'
+13. Set ejection seat to 'SAFE'
+14. Disarm Ordnance (not applicable to DCS)
+15. Wheels should be chocked (not applicable to DCS)
+16. Pull the parking brake
+    - Do not pull the parking brake subsequent to a field landing if the brakes have been used extensively
+17. Set the UHF / VHF RADIO MODE switch to 'OFF'
+18. Cage the standby attitude gyro
+19. Set the Left throttle to 'OFF' (alert the RIO)
+20. Set EMERG generator switch to 'OFF' (this switch is located on the Master Generator Control Panel)
+21. Verify that the EJECT CMD indicator is off (it will look like red an white stripes)
+22. The canopy can now be open
+23. Aircraft has completed postlanding 
 
 ### Cockpit Layout
 
